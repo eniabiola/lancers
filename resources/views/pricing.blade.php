@@ -328,114 +328,119 @@
 @endsection
 
 @section('content')
-<section class="pricing">
+
+        <section class="pricing">
             <div class="container">
-                <div class="title-header">
-                    <h1>Choose a plan that works for you</h1>
+                <div style="margin-left: auto; margin-right: auto;text-align: center; max-width: 465px;">
+                    <h1><span class="avoidwrap">Choose a plan</span> that works for you</h1>
                 </div>
-                <div class="row mt-5 pt-5">
+                <div class="row mt-5 pt-1">
+                    <div class="card" style="margin-bottom: 10px; float: left;">
+                        <div class="pricecol p-2 pt-4">
+                            <p class="pricetext">Starter</p>
+                            <div class="price">
+                                    <h5 class="pricenumber">0.00<p>/mo</p></h5>
+                                </div>
+                                
+                            <ul class="pricelist pt-3">
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> Three active projects</div></li>
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> Two collaborators per project</div></li>
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> One of each generatable document</div></li>
+                            </ul>
 
-                 @if(isset($plans) && $plans != null)
+                            <div class="price-button p-3">
+                                    <a href="/signup.html" class="btn btn-primary btn-block">Sign up for free</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="margin-left: auto; margin-right: auto; margin-bottom: 10px; float: left;">
+                            <div class="pricecol p-2 pt-4">
+                            <p class="pricetext">Pro</p>
+                            <div class="price">
+                                    <h5 class="pricenumber">24.99<p>/mo</p></h5>
+                                </div>
+                                    
+                            <ul class="pricelist pt-3">
+                                    <p class="m-0" style="font-size: 12px">All Starter features and</p>
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> Unlimited active projects</div></li>
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> Five collaborators per project</div></li>
+                                <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></div> <div class="mr-auto ml-4"> Three of each generatable document</div></li>
+                            </ul>
+    
+                            <div class="price-button p-3">
+                                    <a href="/signup.html" class="btn btn-primary btn-block">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
 
-@foreach($plans as $mainPlans)
-
-   <div class="col-lg-4 col-md-6 col-sm-6">
-  <div class="pricecol p-2 pt-4">
-
-
-
-        <p class="pricetext">{{ str_replace("_"," ",ucfirst($mainPlans['name']))}}</p>
-
-        <div class="price">
-        <h5 class="pricenumber">{{ number_format(str_replace("_"," ", ($mainPlans['price'] )), 2 ) }}<p>/mo</p></h5>
-        </div>
-
-            @if($loop->index == 1)
-            <p class="m-0 text-center" style="font-size: 12px">All Starter features and</p>
-            @endif
-
-            @if($loop->index == 2)
-            <p class="m-0 text-center" style="font-size: 12px">All Starter and Pro features and</p>
-            @endif
-
-            @php
-            $url = url("/payment/subscription/".$mainPlans['name']);
-
-            @endphp
-         @foreach($mainPlans as $key => $value)
-
-
-
-                @if(($key != 'id') && ($key != 'created_at') && ($key != 'updated_at'))
-
-                      @if($key == 'features')
-                       <ul class="pricelist pt-3">
-
-                              @php
-
-                               $FeaturesArray = $value;
-                              @endphp
-
-
-                                  @foreach($FeaturesArray as $Featureskey => $Featuresvalue)
-
-                                      @php
-                                      ($Featuresvalue == true) ? $Featuresvalue = "TRUE" : (($Featuresvalue == false) ? $Featuresvalue = "FALSE" : (($Featuresvalue == null) ? $Featuresvalue = "No" : "Null"));
-                                      @endphp
-
-                     <li>
-                      <span><svg width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg></span> {{ str_replace("_"," ",ucfirst($Featureskey)) }}</li>
-
-
-                                  @endforeach
-
-                          @endif
-                     </ul>
-
-
-
-          @endif
-
-                     @if(Auth::user() != null)
-                      <div class="price-button p-3">
-                      <a class="btn btn-primary btn-block" href='{{$url}}'>Purchase</a>
-                      </div>
-                      @endif
-
-                      @if(Auth::user() == null)
-                      <div class="price-button p-3">
-                      <a class="btn btn-primary btn-block" href="/register">Sign up</a>
-                      </div>
-                      @endif
-          @endforeach
-
-            </div>
-          </div>
-
-@endforeach
-
-
-@endif
-
+                    <div class="card" style="margin-bottom: 10px; float: left;">
+                            <div class="pricecol p-2 pt-4">
+                            <p class="pricetext">Pro Plus</p>
+                            <div class="price">
+                                <h5 class="pricenumber">79.99<p>/mo</p></h5>
+                            </div>
+                            
+    
+                            <ul class="pricelist pt-3">
+                                    <p class="m-0" style="font-size: 12px">All Starter and Pro features and</p>
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> Unlimited collaborators</div></li>
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> Unlimited document generation</div></li>
+                                <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></div> <div class="mr-auto ml-4"> Dedicated support</div></li>
+                                    <li><div style="float: left;"><svg width="16" height="16" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></div> <div class="mr-auto ml-4"> Beta access to test new features</div></li>
+                            </ul>
+    
+                            <div class="price-button p-3">
+                                    <a href="/signup.html" class="btn btn-primary btn-block">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
-     <article>
-<div class="enter-div">
-<h4 id="enter-line">Enterprise ready tools</h4>
-<h6>with dedicated support and quick and consistent deolverance of new features, you can trust your<br>
-process in our able hands</h6>
-<br>
-<button onclick="window.location.assign('/contact')" type="button" class="btn" >Contact Sales</button>
-</div>
+        
+<article>
+    <div class="enter-div">
+        <h4 id="enter-line">Enterprise ready tools</h4>
+        <h6>With dedicated support and quick and consistent delivery of new features, you can trust your<br>
+            process in our able hands</h6>
+        <br>
+        <button onclick="window.location.assign('/contact')" type="button" class="btn" >Contact Sales</button>
+    </div>
 </article>
 
 @stop
-
 
 
 @section('footer')
@@ -495,6 +500,3 @@ process in our able hands</h6>
 			</div>
 		</footer>
 @stop
-
-
-
