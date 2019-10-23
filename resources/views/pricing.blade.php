@@ -14,63 +14,63 @@
                 color: rgb(255, 255, 255);
             }
 
-						 /*------Navbar------------*/
+                         /*------Navbar------------*/
 
-			.navbar-main {
-			    background-color: #091429;
-			}
-			.navbar-main .navbar-brand,
-			.navbar-main .navbar-text {
-			    color: rgba(255, 255, 255, 0.9);
-			}
-			.navbar-main .navbar-nav .nav-link {
-				font-size: 1rem;
-			    color: rgba(255, 255, 255, 0.8);
-			}
-			.navbar-main .nav-item.active .nav-link,
-			.navbar-main .nav-item:hover .nav-link {
-			    color: #ffffff;
-			}
+            .navbar-main {
+                background-color: #091429;
+            }
+            .navbar-main .navbar-brand,
+            .navbar-main .navbar-text {
+                color: rgba(255, 255, 255, 0.9);
+            }
+            .navbar-main .navbar-nav .nav-link {
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.8);
+            }
+            .navbar-main .nav-item.active .nav-link,
+            .navbar-main .nav-item:hover .nav-link {
+                color: #ffffff;
+            }
 
-			/* for navbar toggler design */
-			.icon-bar {
-				width: 22px;
-				height: 2px;
-				background-color: #B6B6B6;
-				display: block;
-				transition: all 0.2s;
-				margin-top: 4px
-			}
-			.navbar-toggler {
-			  border: none;
-			  background: transparent !important;
-			}
-			.navbar-toggler:focus{
-				outline: none !important;
-			}
+            /* for navbar toggler design */
+            .icon-bar {
+                width: 22px;
+                height: 2px;
+                background-color: #B6B6B6;
+                display: block;
+                transition: all 0.2s;
+                margin-top: 4px
+            }
+            .navbar-toggler {
+              border: none;
+              background: transparent !important;
+            }
+            .navbar-toggler:focus{
+                outline: none !important;
+            }
 
-			/* navbar toggler animation*/
+            /* navbar toggler animation*/
 
-			.navbar-toggler .top-bar {
-			  transform: rotate(45deg);
-			  transform-origin: 10% 10%;
-			}
-			.navbar-toggler .middle-bar {
-			  opacity: 0;
-			}
-			.navbar-toggler .bottom-bar {
-			  transform: rotate(-45deg);
-			  transform-origin: 10% 90%;
-			}
-			.navbar-toggler.collapsed .top-bar {
-			  transform: rotate(0);
-			}
-			.navbar-toggler.collapsed .middle-bar {
-			  opacity: 1;
-			}
-			.navbar-toggler.collapsed .bottom-bar {
-			  transform: rotate(0);
-			}
+            .navbar-toggler .top-bar {
+              transform: rotate(45deg);
+              transform-origin: 10% 10%;
+            }
+            .navbar-toggler .middle-bar {
+              opacity: 0;
+            }
+            .navbar-toggler .bottom-bar {
+              transform: rotate(-45deg);
+              transform-origin: 10% 90%;
+            }
+            .navbar-toggler.collapsed .top-bar {
+              transform: rotate(0);
+            }
+            .navbar-toggler.collapsed .middle-bar {
+              opacity: 1;
+            }
+            .navbar-toggler.collapsed .bottom-bar {
+              transform: rotate(0);
+            }
 
 
             .pricing-header{
@@ -280,23 +280,23 @@
 @endsection
 
 @section('header')
-    	<header>
-			<nav class="navbar navbar-expand-lg navbar-main">
-				<div class="container">
-					<a class="navbar-brand" href="#">
-						<img src="{{ asset('images/svg/logo-white.svg') }}" class="img img-responsive" height="30" width="auto">
-					</a>
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar top-bar"></span>
-						<span class="icon-bar middle-bar"></span>
-						<span class="icon-bar bottom-bar"></span>
-						<!-- <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg py-1 text-white"></i></span> -->
-					</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-						<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                          	<li class="nav-item ">
-								<a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-							</li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-main">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="{{ asset('images/svg/logo-white.svg') }}" class="img img-responsive" height="30" width="auto">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                        <!-- <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg py-1 text-white"></i></span> -->
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+                            </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="{{ url('/guest/create/step1') }}">Create Invoice</a>
                                 </li>
@@ -309,18 +309,18 @@
                                 <a class="nav-link " href="{{ url('/pricing') }}">Pricing</a>
                             </li>
                             @guest
-    						    <li class="nav-item">
-    								<a class="nav-link" href="{{ route('login') }}">Sign in</a>
-    							</li>
-    							<li class="nav-item">
-    								<a class="nav-link" href="{{ route('register') }}">Sign up</a>
-    							</li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">Sign in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">Sign up</a>
+                                </li>
                             @endauth
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 @stop
 
 @section('sidebar')
@@ -445,51 +445,51 @@
 
 @section('footer')
     <footer class="bg-white pt-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-2">
-						<img src="https://res.cloudinary.com/nxcloud/image/upload/v1570984909/Lancer/Lancers_c40ozr.svg" alt="" class="img img-responsive mb-2" height="30" width="auto">
-						<ul class="list-unstyled">
-							<li><a class="text-dark" href="{{ url('/pricing') }}">Pricing</a></li>
-							<li><a class="text-dark" href="{{ url('/login') }}">Sign in</a></li>
-							<li><a class="text-dark" href="{{ url('/register') }}">Sign up</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-2">
-						<h5>Features</h5>
-						<ul class="list-unstyled">
-							<li><a class="text-dark" href="{{ url('/dashboard') }}">Dashboard</a></li>
-							<li><a class="text-dark" href="{{ url('/projects') }}">Projects</a></li>
-							<li><a class="text-dark" href="{{ url('/invoices') }}">Invoices</a></li>
-							<li><a class="text-dark" href="{{ url('/guest/create_estimate') }}">Create a Project</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<h5>Reach us</h5>
-						<p class="text-dark small">
-							52b, Charity Lane, off Magboso Highway, Ikate, London, Nigeria
-						</p>
-						<h5 class="">
-							<a href="#" class="text-dark mr-2"><i class="fab fa-facebook-square"></i></a>
-							<a href="#" class="text-dark"><i class="fab fa-twitter-square"></i></a>
-						</h3>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<h5>Stay up to date</h5>
-						<p class="text-dark small">
-							Get emails about our newest features and events you can visit. We promise not to spam.
-						</p>
-						<form class="form-inline">
-							<div class="form-group mb-2 mr-2">
-								<label for="staticEmail2" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="staticEmail2" value="" placeholder="Email Address" required>
-							</div>
-							<button type="submit" class="btn btn-primary mb-2" id="btn-sub">Subscribe</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="bg-white text-left py-2 mt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-2">
+                        <img src="https://res.cloudinary.com/nxcloud/image/upload/v1570984909/Lancer/Lancers_c40ozr.svg" alt="" class="img img-responsive mb-2" height="30" width="auto">
+                        <ul class="list-unstyled">
+                            <li><a class="text-dark" href="{{ url('/pricing') }}">Pricing</a></li>
+                            <li><a class="text-dark" href="{{ url('/login') }}">Sign in</a></li>
+                            <li><a class="text-dark" href="{{ url('/register') }}">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2">
+                        <h5>Features</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-dark" href="{{ url('/dashboard') }}">Dashboard</a></li>
+                            <li><a class="text-dark" href="{{ url('/projects') }}">Projects</a></li>
+                            <li><a class="text-dark" href="{{ url('/invoices') }}">Invoices</a></li>
+                            <li><a class="text-dark" href="{{ url('/guest/create_estimate') }}">Create a Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h5>Reach us</h5>
+                        <p class="text-dark small">
+                            52b, Charity Lane, off Magboso Highway, Ikate, London, Nigeria
+                        </p>
+                        <h5 class="">
+                            <a href="#" class="text-dark mr-2"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-twitter-square"></i></a>
+                        </h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h5>Stay up to date</h5>
+                        <p class="text-dark small">
+                            Get emails about our newest features and events you can visit. We promise not to spam.
+                        </p>
+                        <form class="form-inline">
+                            <div class="form-group mb-2 mr-2">
+                                <label for="staticEmail2" class="sr-only">Email</label>
+                                <input type="email" class="form-control" id="staticEmail2" value="" placeholder="Email Address" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2" id="btn-sub">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white text-left py-2 mt-0">
                 <div class="container">
                     <p class="float-right">
                     {{-- <a href="#">Back to top</a> --}}
@@ -497,6 +497,6 @@
                         <span>&#8593;</span></a>
                     </p>
                 </div>
-			</div>
-		</footer>
+            </div>
+        </footer>
 @stop
